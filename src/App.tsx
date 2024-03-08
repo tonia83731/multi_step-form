@@ -3,12 +3,12 @@ import PersonalInfo from "./components/PersonalInfo";
 import PlanSelect from "./components/PlanSelect";
 import Summarized from "./components/Summarized";
 import Thankyou from "./components/Thankyou";
-import { FormContextProvider } from "./context/FormContext";
+import StepButtonGroup from "./components/step/StepButtonGroup";
+import { useFormContext } from "./context/FormContext";
 import { FormSteps } from "./types/form.type";
-import { useState } from "react";
 
 function App() {
-  const [step, setStep] = useState<FormSteps>(FormSteps.PersonalInfo);
+  const { step, setStep, setStepNum } = useFormContext();
 
   const renderSteps = () => {
     switch (step) {
@@ -28,7 +28,8 @@ function App() {
   };
   return (
     <>
-      <FormContextProvider>{renderSteps()}</FormContextProvider>
+      <StepButtonGroup />
+      {renderSteps()}
     </>
   );
 }

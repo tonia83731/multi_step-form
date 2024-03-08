@@ -3,10 +3,17 @@
 @tailwind utilities;
 
 body {
-  margin: 0;
+  margin: 0 auto;
   display: flex;
   place-items: center;
   min-width: 320px;
+  max-width: 1200px;
   min-height: 100vh;
+  font-family: "Ubuntu", sans-serif;
+  background-color: #EFF5FF;
+}
+
+input, input:focus {
+  outline: none;
 }
 
