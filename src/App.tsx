@@ -47,7 +47,7 @@ function App() {
           </div>
         </div>
         <div className="px-[100px] md:flex md:justify-center md:items-center">
-          <div>{renderSteps()}</div>
+          <div className="md:flex md:flex-col">{renderSteps()}</div>
         </div>
       </div>
     </div>

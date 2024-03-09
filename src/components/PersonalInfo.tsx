@@ -90,7 +90,7 @@ export default function PersonalInfo() {
           />
         </div>
       </div>
-      <div className="fixed bottom-0 left-0 right-0 bg-white p-4 unset">
+      <div className="fixed bottom-0 left-0 right-0 bg-white p-4 md:relative">
         <ButtonGroup
           onNextClick={() => {
             if (!formData.email.includes("@")) {
