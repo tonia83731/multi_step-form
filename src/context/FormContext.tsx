@@ -8,6 +8,8 @@ interface IFormContextProps {
   setStep: (data: FormSteps) => void;
   stepNum: number;
   setStepNum: (data: number) => void;
+  totalPrice: number;
+  setTotalPrice: (data: number) => void;
 }
 
 type FormContext_props = {
@@ -34,10 +36,20 @@ export const FormContextProvider = (props: FormContext_props) => {
   });
   const [step, setStep] = useState<FormSteps>(FormSteps.PersonalInfo);
   const [stepNum, setStepNum] = useState<number>(1);
+  const [totalPrice, setTotalPrice] = useState<number>(0);
 
   return (
     <FormContext.Provider
-      value={{ formData, setFormData, step, setStep, stepNum, setStepNum }}
+      value={{
+        formData,
+        setFormData,
+        step,
+        setStep,
+        stepNum,
+        setStepNum,
+        totalPrice,
+        setTotalPrice,
+      }}
     >
       {children}
     </FormContext.Provider>

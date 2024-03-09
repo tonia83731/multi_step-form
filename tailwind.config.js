@@ -7,6 +7,7 @@ export default {
         denim: "#022959",
         "sky-blue": "#BEE2FD",
         grey: "#9699AA",
+        "very-light-grey": "#F8F9FF",
         "border-grey": "#D6D9E6",
         purple: "#483EFF",
       },

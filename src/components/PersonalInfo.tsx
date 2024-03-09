@@ -46,7 +46,7 @@ export default function PersonalInfo() {
   }, [formData]);
   return (
     <>
-      <div className="absolute w-11/12 top-24 left-1/2 translate-x-[-50%] bg-white rounded-[10px] px-6 py-8 mx-auto unset">
+      <div className="absolute w-11/12 top-24 left-1/2 translate-x-[-50%] bg-white rounded-[10px] px-4 py-8 mx-auto unset">
         <MainTitle
           title="Personal info"
           description="Please provide your name, email address, and phone number."
